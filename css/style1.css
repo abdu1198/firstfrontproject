@@ -1,0 +1,715 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* -------start navbar------------ */
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(226, 145, 23, 0.795);
+}
+.section1 .navbar {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background-image: linear-gradient(176deg, black 70%, white);
+}
+.section1 .navbar ul .toleft {
+  color: red;
+  float: left;
+  padding: auto;
+}
+.section1 .navbar ul li {
+  list-style-type: none;
+  padding: 10px 10px;
+}
+.section1 .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.section1 .navbar ul li .logo {
+  color: red;
+  font-size: 25px;
+}
+.section1 .navbar ul .toright {
+  float: right;
+}
+.section1 .navbar ul li button {
+  padding: 10px;
+  margin: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.section1 .navbar ul li .btn1 {
+  color: green;
+  border: 1px solid green;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.section1 .navbar ul li .btn1:hover {
+  background-color: green;
+  color: white;
+}
+.section1 .navbar ul li .btn2 {
+  color: blue;
+  border: 1px solid blue;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.section1 .navbar ul li .btn2:hover {
+  background-color: blue;
+  color: white;
+}
+/* -------media navbar------------ */
+/* -------tablet  navbar------------ */
+@media (max-width: 768px) {
+  .section1 {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(226, 145, 23, 0.795);
+  }
+  .section1 .navbar ul li {
+    list-style-type: none;
+    padding: 10px 5px;
+  }
+}
+/* -------phone navbar------------ */
+@media (max-width: 425px) {
+  .section1 {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(226, 145, 23, 0.795);
+  }
+
+  .section1 .navbar ul li {
+    list-style-type: none;
+    padding: 10px 2px;
+  }
+  .section1 .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .section1 .navbar ul li .logo {
+    color: red;
+    font-size: 17px;
+  }
+  .section1 .navbar ul li button {
+    padding: 4px;
+    margin: 3px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+}
+
+/* -------end navbar------------ */
+/* --------start slider------- */
+.section1 .slider {
+  width: 100%;
+  height: 94.5vh;
+
+  background-image: url(../photos/download.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation-name: changebackground;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes changebackground {
+  25% {
+    background-image: url(../photos/download.jpeg);
+  }
+  50% {
+    background-image: url(../photos/images.jpeg);
+  }
+  75% {
+    background-image: url(../photos/11.jpeg);
+  }
+}
+/* -------media slider------------ */
+/* -------tablet  slider------------ */
+@media (max-width: 768px) {
+  .section1 .slider {
+    height: 85vh;
+  }
+}
+
+/* -------phone slider ------------ */
+@media (max-width: 425px) {
+  .section1 .slider {
+    height: 86vh;
+  }
+}
+/* -------start section 2------- */
+.section2 {
+  width: 100%;
+  height: 98.5vh;
+  background-color: black;
+  margin-top: 60px;
+  padding: 10px 0px;
+}
+.section2 .heading {
+  color: brown;
+  font-size: 60px;
+  text-align: center;
+  margin: 10px auto;
+}
+.section2 .line1 {
+  width: 60%;
+  height: 5px;
+  background-image: linear-gradient(to right, white, red, white);
+  margin: auto;
+  border-radius: 50%;
+}
+.section2 .line2 {
+  width: 40%;
+  border-top: 4px dashed red;
+  margin: 20px auto;
+}
+.section2 .line3 {
+  width: 30%;
+  border-top: 4px dashed red;
+  margin: 20px auto;
+}
+.section2 .main {
+  width: 100%;
+  height: 77vh;
+  /* background-color: rgb(255, 0, 0); */
+  display: flex;
+  flex-wrap: wrap;
+}
+.section2 .main .main1 {
+  width: 30%;
+  height: 100%;
+}
+.section2 .main .main1 img {
+  width: 100%;
+  height: 100%;
+}
+.section2 .main .main2 {
+  width: 70%;
+  height: 100%;
+}
+.section2 .main .main2 .item {
+  width: 100%;
+  height: 30%;
+  /* background-color: yellow; */
+  padding-top: 40px;
+  text-align: center;
+}
+.section2 .main .main2 .item h1 {
+  color: white;
+  font-size: 40px;
+}
+.section2 .main .main2 .item p {
+  color: blueviolet;
+  font-weight: bold;
+  padding: 10px;
+}
+/* ----------media style section2--------------- */
+/* -----------------tablet---------------------------- */
+@media (max-width: 768px) {
+  .section2 {
+    width: 100%;
+    height: 171vh;
+  }
+
+  .section2 .heading {
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .section2 .line2 {
+    margin: 13px auto;
+  }
+  .section2 .line3 {
+    margin: 13px auto;
+  }
+  .section2 .main .main1 {
+    width: 65%;
+    margin: auto;
+  }
+  .section2 .main .main2 {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* -----------------phone---------------------------- */
+@media (max-width: 425px) {
+  .section2 {
+    width: 100%;
+    height: 182vh;
+  }
+  .section2 .heading {
+    color: rgb(240, 159, 159);
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .section2 .main .main2 .item h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .section2 .main .main2 .item p {
+    color: blueviolet;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+/* -------------------end section 2------------------------------- */
+/* -------------------start section 3------------------------------- */
+.section3 {
+  width: 100%;
+  height: 98.5vh;
+  background-color: brown;
+  margin-top: 60px;
+  padding: 10px 0px;
+}
+.section3 h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 10px auto;
+}
+.section3 .item1 {
+  width: 60%;
+  height: 5px;
+  background-image: linear-gradient(to right, white, red, white);
+  margin: auto;
+  border-radius: 50%;
+}
+.section3 .item2 {
+  width: 40%;
+  border-top: 4px dashed rgb(255, 133, 133);
+  margin: 20px auto;
+}
+.section3 .item3 {
+  width: 30%;
+  border-top: 4px dashed red;
+  margin: 20px auto;
+}
+.section3 .navs {
+  width: 70%;
+  height: auto;
+  /* background-color: white; */
+  margin: auto;
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+.section3 .navs ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.section3 .navs ul li {
+  background-color: aqua;
+  padding: 15px 15px;
+  border-radius: 20px;
+}
+.section3 .image {
+  width: 70%;
+  height: 73vh;
+  /* background-color: blueviolet; */
+  margin: auto;
+  padding: 2px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.section3 .image .item {
+  width: 30%;
+  height: 40%;
+  /* background-color: yellow; */
+  margin-top: 20px;
+}
+.section3 .image .item img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+/* -------------------style section 3------------------------------- */
+/* -------------------tablet section 3------------------------------- */
+@media (max-width: 768px) {
+  .section3 {
+    width: 100%;
+    height: 107vh;
+  }
+  .section3 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .section3 .item1 {
+    width: 50%;
+    height: 5px;
+    background-image: linear-gradient(to right, white, red, white);
+    margin: auto;
+    border-radius: 53%;
+  }
+  .section3 .item2 {
+    width: 40%;
+    border-top: 2px dashed rgb(255, 133, 133);
+    margin: 8px auto;
+  }
+  .section3 .item3 {
+    width: 30%;
+    border-top: 2px dashed rgb(255, 133, 133);
+    margin: 8px auto;
+  }
+  .section3 .navs ul li {
+    background-color: aqua;
+    padding: 7px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+  .section3 .image .item {
+    width: 47%;
+  }
+}
+/* -------------------phone section 3------------------------------- */
+@media (max-width: 425px) {
+    .section3{
+        width: 100%;
+        height: 213vh;}
+  .section3 .image .item {
+    width: 100%;
+  }
+}
+/* -------------------end section 3------------------------------- */
+/* -------------------start section 4------------------------------- */
+.section4 {
+    width: 100%;
+    height: 98vh;
+    background-color: brown;
+    margin-top: 60px;
+    padding: 10px 0px;
+   
+  }
+  .section4 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px auto;
+    
+    width: 100%;
+    
+  }
+  .section4 .line1 {
+    width: 60%;
+    height: 5px;
+    background-image: linear-gradient(to right, white, red, white);
+    margin: auto;
+    border-radius: 50%;
+  }
+  .section4 .line2 {
+    width: 40%;
+    border-top: 4px dashed rgb(255, 133, 133);
+    margin: 20px auto;
+  }
+  .section4 .line3 {
+    width: 30%;
+    border-top: 4px dashed red;
+    margin: 20px auto;
+  }
+  .section4 .main{
+    width: 100%;
+    height: 80vh;
+    /* background-color: black; */
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section4 .main .inf{
+    width: 50%;
+    height: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+  }
+  .section4 .main .inf .mail{
+    width: 50%;
+    /* background-color: rgb(118, 165, 42); */
+    text-align: center;
+    padding-bottom: 15px;
+
+  }
+  .section4 .main .inf .mail .text{
+    width: 95%;
+    height: 25px;
+  
+    border-radius: 3px;
+  }
+  .section4 .main .inf .Password{
+    width: 50%;
+    /* background-color: rgb(120, 1, 255); */
+    text-align: center;
+    padding-bottom: 15px;
+    
+  }
+  .section4 .main .inf .Password .input2 {
+    width: 95%;
+    height: 25px;
+    
+    border-radius: 3px;
+    background-color: white;
+}
+.section4 .main .inf .address1{
+  width: 100%;
+  /* background-color: rgb(6, 144, 185); */
+  text-align: center;
+  padding-bottom: 15px;
+  
+}
+.section4 .main .inf .address1 .Address1 {
+  width: 95%;
+  height: 25px;
+  border-radius: 3px;
+  background-color: white;
+}
+.section4 .main .inf .address2{
+  width: 100%;
+  /* background-color: rgb(48, 185, 6); */
+  text-align: center;
+  padding-bottom: 15px;
+  
+}
+.section4 .main .inf .address2 .address2 {
+  width: 95%;
+  height: 25px;
+ 
+  border-radius: 3px;
+  background-color: white;
+}
+.section4 .main .inf .city{
+  width: 50%;
+  /* background-color: rgb(117, 128, 101); */
+  text-align: center;
+  padding-bottom: 15px;
+}
+.section4 .main .inf .city input{
+  width: 95%;
+  height: 25px;
+  border-radius: 3px;
+  background-color: white;
+}
+.section4 .main .inf .Zip{
+  width: 25%;
+  /* background-color: rgb(216, 76, 123); */
+  text-align: center;
+  padding-bottom: 15px;
+}
+.section4 .main .inf .Zip input{
+  width: 95%;
+  height: 25px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.section4 .main .inf input{
+  height: 25px !important;
+  padding-bottom: 15px;
+}
+.section4 .main .map{
+    width: 48%;
+    height: 90%;
+    background-color: blueviolet;
+    margin: auto;
+  }
+.section4 .main .map iframe{
+height: 100%;
+width: 100%;
+  }
+/* -------------------media section 4------------------------------- */
+/* -------------------tablet section 4------------------------------- */
+@media(max-width:768px){
+    .section4{
+    height: 110vh;}
+    .section4 h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 2px auto;
+    }
+    .section4 .line2 {
+    margin: 10px auto;
+}
+.section4 .line3 {
+    margin: 10px auto;
+}
+.section4 .main{
+    width: 100%;
+    height: 95vh;}
+.section4 .main .inf {
+    width: 90%;
+    height: 48%;
+    margin: auto;
+}
+.section4 .main .inf {
+  width: 99%;}
+
+    .section4 .main .map {
+        width: 90%;
+        height: 48%;
+        margin: auto;
+    }
+    .section4 .main .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+/* -------------------phone section 4------------------------------- */
+@media(max-width:425px){
+  .section4 {
+    width: 100%;
+    height: 182vh;
+    background-color: brown;
+    margin-top: 60px;
+    padding: 10px 0px;
+}
+.section4 .main {
+  width: 100%;
+  height: 162vh;
+}
+.section4 .main .inf .mail {
+  width: 98%;
+  /* background-color: rgb(118, 165, 42); */
+  text-align: center;
+  padding-bottom: 15px;
+}
+.section4 .main .inf .Password {
+  width: 99%;
+  /* background-color: rgb(120, 1, 255); */
+  text-align: center;
+  padding-bottom: 15px;
+}
+.section4 .main .inf .Zip {
+  width: 50%;
+  /* background-color: rgb(216, 76, 123); */
+  text-align: center;
+  padding-bottom: 15px;
+}
+}
+/* -------------------end section 4------------------------------- */
+/* -------------------footer------------------------------- */
+.Footer{
+    height: 50vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 10px 0px;
+}
+.Footer .About{
+    height: 70%;
+    width: 50%;
+    /* background-color: red; */
+}
+.Footer .About h2{
+    font-size: 40px;
+    
+}
+.Footer .About p{
+    
+    font-weight: bold;
+    margin: 10px 10px;
+}
+.Footer .cat {
+    height: 70%;
+    width: 20%;
+    /* background-color: rgb(255, 255, 255); */
+}
+.Footer .cat h2{
+    
+    font-size: 40px;
+
+}
+.Footer .cat .menu1 {
+  padding: 0px 
+  3px;
+  margin: 30px 30px;
+
+}
+.Footer .links {
+    height: 70%;
+    width: 20%;
+    /* background-color: rgb(37, 12, 12); */
+}
+
+.Footer .links h2{
+    
+    font-size: 40px;
+
+}
+
+.Footer .links .menu2 {
+  padding: 0px 
+  3px;
+  margin: 30px 30px;
+
+}
+.Footer .linefoot{
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, white, red, white);
+  margin: auto;
+  border-radius: 50%
+}
+
+
+/* -------------------media footer-----------------------*/
+@media(max-width:768px){
+  .Footer .About {
+    height: 40%;
+    width: 50%;
+   
+}
+.Footer .cat {
+  height: 40%;
+  width: 20%;
+  /* background-color: rgb(255, 255, 255); */
+}
+.Footer .links {
+  height: 50%;
+  width: 40%;
+  /* background-color: rgb(37, 12, 12); */
+}
+}
+
+@media(max-width:425px){
+.Footer {
+  height: 94vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 10px 0px;
+}
+.Footer .About {
+  height: 17%;
+  width: 100%;
+  /* background-color: red; */
+}
+.Footer .cat {
+  height: 12%;
+  width: 100%;
+  /* background-color: rgb(255, 255, 255); */
+}
+.Footer .links {
+  height: 33%;
+  width: 70%;
+  /* background-color: rgb(37, 12, 12); */
+}
+}
